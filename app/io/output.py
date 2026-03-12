@@ -1,8 +1,7 @@
 def print_console(text):
-    """Print text to console"""
-    pass
+    print(text)
 
 
 def write_file_builtin(path, text):
-    """Write text to file"""
-    pass
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(text)
